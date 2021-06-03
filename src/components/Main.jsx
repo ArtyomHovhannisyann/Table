@@ -19,7 +19,7 @@ export default function Main() {
     }
     return (
         <div>
-            <Header/>
+            <Header data = {usersData}/>
             <Table data = {usersData}/>
         </div>
     )

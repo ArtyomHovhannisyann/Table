@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import Row from "./Row";
 
-export default function Table() {
-    return (
-        <div>
-            Table
-        </div>
-    )
+export default function Table({ data }) {
+  return (
+    <div>
+      <table>
+        <tr>
+          {data[0] != undefined
+            ? Object.keys(data[0]).map((key, i) => {
+                return <th key={i}>{key}</th>;
+              })
+            : null}
+        </tr>
+        {data != undefined
+          ? data.map((el, i) => <Row data={el} key = {i}/>)
+          : null}
+      </table>
+    </div>
+  );
 }
