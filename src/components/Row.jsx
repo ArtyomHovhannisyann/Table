@@ -7,7 +7,6 @@ export default function Row({ data }) {
         if (value[0] != undefined || typeof value == "number") {
           return <td key={i}>{value}</td>;
         } else {
-          console.log(Object.values(value));
           return <td>{Object.values(value)[0]}</td>;
         }
       })}

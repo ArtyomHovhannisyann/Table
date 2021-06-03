@@ -4,14 +4,14 @@ import Header from './Header'
 import Table from './Table'
 
 export default function Main() {
-    const [ usersData, setusersData] = useState([])
+    const [ usersData, setUsersData] = useState([])
     useEffect(() => {
         GET_DATA()
     }, [])
     async function GET_DATA() {
         try{
             const data = await request("https://jsonplaceholder.typicode.com/users","GET")
-            setusersData(data)
+            setUsersData(data)
         }
         catch(err){
             console.error(err);
