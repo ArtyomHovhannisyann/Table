@@ -3,7 +3,7 @@ import Row from "./Row";
 
 export default function Table({ data }) {
   return (
-    <div>
+    <div className="table">
       <table>
         <tr>
           {data[0] != undefined &&

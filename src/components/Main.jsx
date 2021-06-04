@@ -18,7 +18,7 @@ export default function Main() {
         }
     }
     return (
-        <div>
+        <div className = "main">
             <Header data = {usersData}/>
             <Table data = {usersData}/>
         </div>
