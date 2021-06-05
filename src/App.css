@@ -29,3 +29,7 @@ ul li{
   border: 1px solid black;
   border-bottom: none;
 }
+.btn{
+  cursor: pointer;
+  margin: 5px;
+}
