@@ -10,6 +10,7 @@ export default function Table({ data }) {
             Object.keys(data[0]).map((key, i) => {
               return <th key={i}>{key}</th>;
             })}
+          <th className = "tools">Tools</th>
         </tr>
         {data != undefined && data.map((el, i) => <Row data={el} key={i} />)}
       </table>
